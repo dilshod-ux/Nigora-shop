@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qarzlar Ro'yxati</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛍 Qarzlar Ro'yxati</h1>
+
+    <form id="debtForm">
+      <input type="text" id="fname" placeholder="Ism" required>
+      <input type="text" id="lname" placeholder="Familiya" required>
+      <input type="text" id="phone" placeholder="Telefon raqam" required>
+      <input type="number" id="amount" placeholder="Qarz summasi" required>
+      <button type="submit">➕ Qo'shish</button>
+    </form>
+
+    <h2>📋 Barcha mijozlar</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ism</th>
+          <th>Familiya</th>
+          <th>Telefon</th>
+          <th>Qarz</th>
+          <th>❌</th>
+        </tr>
+      </thead>
+      <tbody id="debtList"></tbody>
+    </table>
+
+    <div class="total">
+      Umumiy qarz: <span id="totalDebt">0</span> so'm
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
